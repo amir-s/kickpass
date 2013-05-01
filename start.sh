@@ -12,8 +12,7 @@ sudo iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
 sudo iptables -t nat -A REDSOCKS -p tcp -o eth0 -j DNAT --to 127.0.0.1:31338
 sudo iptables -t nat -A OUTPUT -p tcp -j REDSOCKS
 sudo iptables -t nat -I REDSOCKS -d 192.81.209.89 -j RETURN
-#ssh -CfqND 31337 user@192.81.209.89
 echo "Connecting ..."
-ssh -CqND 31337 user@192.81.209.89
+ssh -CfqND 31337 USERNAME@192.81.209.89
 echo "Connected :)"
 
