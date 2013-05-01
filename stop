@@ -6,5 +6,5 @@ sudo iptables -t nat -F
 sudo iptables -t nat -X
 sudo iptables -t nat -Z
 sudo killall redsocks
-ps x | grep "ssh -CfqND" | head -n 1 | cut -d ' ' -f 1 | xargs sudo kill -9
+ps x | grep "ssh -CfqND" | head -n 1 | sed 's/^ *//g' | cut -d ' ' -f 1 | xargs sudo kill -9
 echo "Stopped :)"
