@@ -1,0 +1,7 @@
+#!/bin/bash
+
+USERNAME='ghaffari'
+SERVER='sharecode.ir'
+PORT=31337
+
+ssh -CqTnND $PORT $USERNAME@$SERVER
