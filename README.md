@@ -1,4 +1,6 @@
-KICKMASS FOR JSASS
-------------------
+Proxifier for Linux
+-------------------
+
+Under construction.
 
 
